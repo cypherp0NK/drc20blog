@@ -22,7 +22,7 @@ LTC20 is built on top of the Litecoin blockchain, which is a decentralized, peer
 
 ## **How is the LTC20 standard made possible**
 
-While Litecoin doesn’t natively support smart contracts, developers can still create smart contracts on Litecoin using called delegrated proof-of-work (**DPoW**). DPow enables the Litecoin network to verify and execute smart contracts by outsourcing the computation to other blockchains that do support smart contracts, such as Ethereum. By doing this, Litecoin benefits from the functionality of smart contracts without having to build it natively.
+While Litecoin doesn’t natively support smart contracts, developers can still create smart contracts on Litecoin using what is called delegrated proof-of-work (**DPoW**). DPow enables the Litecoin network to verify and execute smart contracts by outsourcing the computation to other blockchains that do support smart contracts, such as Ethereum. By doing this, Litecoin benefits from the functionality of smart contracts without having to build it natively.
 
 ## **Creating LTC20 Tokens: A Step-by-Step Guide**
 
