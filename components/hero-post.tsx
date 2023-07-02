@@ -1,17 +1,17 @@
-import Avatar from './avatar'
-import DateFormatter from './date-formatter'
-import CoverImage from './cover-image'
-import Link from 'next/link'
-import type Author from '../interfaces/author'
+import Avatar from "./avatar";
+import DateFormatter from "./date-formatter";
+import CoverImage from "./cover-image";
+import Link from "next/link";
+import type Author from "../interfaces/author";
 
 type Props = {
-  title: string
-  coverImage: string
-  date: string
-  excerpt: string
-  author: Author
-  slug: string
-}
+  title: string;
+  coverImage: string;
+  date: string;
+  excerpt: string;
+  author: Author;
+  slug: string;
+};
 
 const HeroPost = ({
   title,
@@ -30,8 +30,8 @@ const HeroPost = ({
         <div>
           <h3 className="mb-4 text-4xl lg:text-5xl leading-tight">
             <Link
-              as={`/posts/${slug}`}
-              href="/posts/[slug]"
+              as={`/articles/${slug}`}
+              href="/articles/[slug]"
               className="hover:underline"
             >
               {title}
@@ -42,12 +42,24 @@ const HeroPost = ({
           </div>
         </div>
         <div>
-          <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-          <Avatar name={author.name} picture={author.picture} />
+          <p className="text-lg leading-relaxed mb-4">
+            <div>{excerpt}</div>
+            <Avatar name={author.name} picture={author.picture} />
+
+            <div className="flex flex-col lg:flex-row justify-center items-center">
+              <a
+                href="/articles/exploring-ltc20"
+                className="mx-3 bg-black hover:bg-white hover:text-black border border-black text-white text-base font-semibold py-1.5 px-6 duration-200 transition-colors mb-6 lg:mb-0"
+              >
+                Read more
+              </a>
+              {/* <a href="" className="mx-3 font-bold hover:underline"></a> */}
+            </div>
+          </p>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default HeroPost
+export default HeroPost;
