@@ -14,68 +14,63 @@ In the ever-evolving landscape of cryptocurrencies, Litecoin emerged as a promin
 
 ## **What is LTC20?**
 
-LTC20 is a token standard on the Litecoin blockchain that is designed to enable the creation of smart contracts and decentralized applications. The LTC20 standard was first introduced in August 2018 as a proposal to the Litecoin community. It was designed to provide a standardized way for developers to create tokens on the Litecoin blockchain, similar to the ERC20 standard on Ethereum.
+LTC20 is a token standard being built on top of the Litecoin Ordinals Protocol with an aim of making its blockchain network compatible with fungible tokens. The LTC20 standard is experimental and may provide a promising way for its users to create tokens on the Litecoin blockchain, similar to the BRC20 token standard on Bitcoin.
 
 ## **The technology behind LTC20**
 
 LTC20 is built on top of the Litecoin blockchain, which is a decentralized, peer-to-peer network that allows for fast, secure, and low cost transactions. The Litecoin network is based on the same technology as bitcoin but with a different hashing algorithm called Scrypt. The Scrypt algorithm is a password-based key derivation function originally developed for the Tarsnap online backup service. It is designed to be more memory intensive than other hashing algorithms. Litecoin has been using this algorithm since its birth to maintain secured resistance to attacks while allowing for more transactions to be added to a single Litecoin block.
 
-## **How is the LTC20 standard made possible**
-
-While Litecoin doesn’t natively support smart contracts, developers can still create smart contracts on Litecoin using what is called delegrated proof-of-work (**DPoW**). DPow enables the Litecoin network to verify and execute smart contracts by outsourcing the computation to other blockchains that do support smart contracts, such as Ethereum. By doing this, Litecoin benefits from the functionality of smart contracts without having to build it natively.
+LTC20 tokens created on the network has been achieved by inscribing metadata (token information) to units of the network’s native cryptocurrency.
 
 ## **Creating LTC20 Tokens: A Step-by-Step Guide**
 
-Creating LTC20 tokens on Litecoin is a relatively straightforward process that can be done using a number of different tools and platforms. One popular option is the Litecoin Omni Layer, which provides a user-friendly interface for creating and managing LTC20 tokens. It has a lightweight version called OmniLite which is specially designed for mobile devices and low-powered hardware. To create LTC20 tokens with OmniLite:
+To create LTC20 tokens, ensure you have the Electrum Litecoin wallet installed on your PC. If you don’t have this wallet, visit [**https://electrum-ltc.org**](https://electrum-ltc.org) and download one of the executables that match your OS (operating system):
 
-- Visit [https://omnilite.org](https://omnilite.org) and click on download.
-  ![](https://paper-attachments.dropboxusercontent.com/s_6371B00262F165391CE82B55B277D081F97C9068570A657371D925EFB78FF3FC_1688274905835_Screenshot+2023-07-02+071439.png)
+![](https://paper-attachments.dropboxusercontent.com/s_6371B00262F165391CE82B55B277D081F97C9068570A657371D925EFB78FF3FC_1688462560213_Screenshot+2023-07-04+112030.png)
 
-- Once downloaded, open the application and begin the installation process. OmniLite will open up automatically afterwards.
-- Inside the application, you will be asked to choose a data directory. Use the default directory or a custom one for this.
-- The application will begin syncing your wallet. Once complete, go to the “Receive” tab to create a new wallet. The input fields are optional so. You can fill the wallet input fields with information such as a wallet label or leave them blank like I have done.
-  ![](https://paper-attachments.dropboxusercontent.com/s_6371B00262F165391CE82B55B277D081F97C9068570A657371D925EFB78FF3FC_1688276399196_Screenshot+2023-07-02+073739.png)
+- Once downloaded, open the application and begin the installation process. Also ensure to secure your new wallet seed phrase.
+- Create a new address by navigating to the ‘Receive’ tab and selecting ‘Never’ as an expiry timeline. ‘Description’ and ‘Requested’ amount fields are optional. Click on ‘New Address’. Your new wallet address will popup on the right hand side of the application window.
 
-- Click on “Request payment” to see your wallet address.
-  ![](https://paper-attachments.dropboxusercontent.com/s_6371B00262F165391CE82B55B277D081F97C9068570A657371D925EFB78FF3FC_1688276592360_Screenshot+2023-07-02+074234.png)
+![](https://paper-attachments.dropboxusercontent.com/s_6371B00262F165391CE82B55B277D081F97C9068570A657371D925EFB78FF3FC_1688476962426_Screenshot+2023-07-04+152219.png)
 
-- Send some Litecoin to your new wallet. Litecoin will be used for gas fees when creating your token. Multiple wallets with OmniLite and they will be displayed under “Requested payments history”.
-- Once you have some Litecoin in your wallet, click on “Window” then “console” to open the OmniLite terminal.
-  ![](https://paper-attachments.dropboxusercontent.com/s_6371B00262F165391CE82B55B277D081F97C9068570A657371D925EFB78FF3FC_1688277166655_Screenshot+2023-07-02+075211.png)
+- For this guide, we will be using litescribe to create our token. Visit https://litescribe.io and click on the ltc-20 tab.
 
-- Inside the terminal, you will need to use the `omni_sendissuancefixed` command and other datasets for your token to be created. The datasets are:
+![](https://paper-attachments.dropboxusercontent.com/s_6371B00262F165391CE82B55B277D081F97C9068570A657371D925EFB78FF3FC_1688465422623_Screenshot+2023-07-04+120941.png)
 
-  **1. Your wallet address** (E.g “MGZh7KmXC28c9SUw9jk42wcdeEWxtSUJB7”): This will be used to broadcast the transactions to the network.
+- A popup window will open up. Click on the Deploy tab and specify the tick name of your token along with a total supply and a mint limit rate.
+![](https://paper-attachments.dropboxusercontent.com/s_6371B00262F165391CE82B55B277D081F97C9068570A657371D925EFB78FF3FC_1688466075423_Screenshot+2023-07-04+121347.png)
 
-  **2. Preferred network environment** (mainnet/testnet): This is represented by either 1 for mainnet or 2 for testnet.
+- Click on Upload. A JSON object containing deployment details such as the protocol, operation method, tick, max supply and mint limit will be displayed. Paste your Electrum Litecoin wallet address in the field below. This will be used to receive your token’s inscription. Finally click on “Submit & Pay invoice”.
+![](https://paper-attachments.dropboxusercontent.com/s_6371B00262F165391CE82B55B277D081F97C9068570A657371D925EFB78FF3FC_1688472695178_Screenshot+2023-07-04+141032.png)
 
-  **3. Divisibility/Indivisibility**: If you want your tokens to be indivisible this dataset must be set to 1. Divisible tokens can be created by giving 2 to the dataset. When your token is divisible, fractions such as 0.1 of your token can be sent and received.
+- While an invoice window opens up, open your Electrum LTC wallet and send the exact amount of LTC needed for the transaction to the provided address. 
+- After the transaction is approved on the Litecoin network, copy the transaction id and visit [https://ordinalslite.com](https://ordinalslite.com). Paste the transaction id into the search bar to see your transaction details. 
+- You be able to should see your new token’s detail at the top with a unique inscription id. Your inscription id can also be used to view your token’s details when used in the search bar.
+## **Minting LTC20 tokens**
 
-  **4. Identifier**: This uses a number (E.g, 0) to identify your token.
+Now that you have a token created, you also have to mint it out to your address. Other users can mint as well as long as it doesn’t go above the token’s supply limit. The number of tokens minted per transaction is restricted to not be more than the mint limit amount. Here are the steps for minting your new LTC20 token:
 
-  **5. Category**: Defines a category for your token (E.g, “Token”). You can leave this dataset blank but you have to provide an empty parenthesis like so `""`.
+- Go back to the Litescribe website, click on LTC20 and stay on the Mint tab. Type in your token’s tick name and wait for a green tick to appear. 
+- Specify an amount to mint, and how many iterations you want the mint operation to be processed. In my case I am minting just one LTC20 token once.
 
-  **6. Subcategory**: Defines a subcategory for your token (E.g, “DeFi”). You can leave this dataset blank if you want.
+![](https://paper-attachments.dropboxusercontent.com/s_6371B00262F165391CE82B55B277D081F97C9068570A657371D925EFB78FF3FC_1688475309371_Screenshot+2023-07-04+145428.png)
 
-  **7. Token name**: Your token’s name goes into this dataset.
+- Click on 'Upload’.
+- You will be presented with an invoice window to send LTC to for gas coverage. The new invoice page also has a JSON object containing the protocol, operation method, tick name, and amount to mint. Click on ‘Submit & Pay invoice’.
 
-  **8. Website URL**: Token website URL. You can leave this blank if you want.
+![](https://paper-attachments.dropboxusercontent.com/s_6371B00262F165391CE82B55B277D081F97C9068570A657371D925EFB78FF3FC_1688475721843_Screenshot+2023-07-04+145554.png)
 
-  **9. Description**: Additional information about your token and its usecase. You can leave this dataset blank.
-
-  **10. Supply**: Circulating supply of your new token.
-
-  (omni_sendissuancefixed "MGZh7KmXC28c9SUw9jk42wcdeEWxtSUJB7" 1 1 0 "Token" "DeFi" "myToken" "https://" "description" "1000000")
-  ![](https://paper-attachments.dropboxusercontent.com/s_6371B00262F165391CE82B55B277D081F97C9068570A657371D925EFB78FF3FC_1688280271642_Screenshot+2023-07-02+084210.png)
-
-Click on the Enter key and that's it. You now have a live LTC20 token! You can view your new token by navigating to the Balances tab.
-
+- Open your Electrum LTC wallet and send the exact amount of LTC needed for the transaction to the provided address. 
+- After the transaction is confirmed, ensure to freeze your tokens in the Electrum Litecoin wallet to prevent yourself from accidentally spending your tokens as low balances. Right click your transaction in the ‘Coins’ section and select ‘Freeze Coin’.
 ## **Sending and Receiving LTC20 tokens**
 
-The OmniLite wallet has 2 special tabs for sending and receiving LTC20 tokens. To send tokens navigate to the “Send” tab, select a wallet address to send from, paste the receiving address, and type in an amount of LTC20 tokens to send to the receiving address. Click on send and token transfer will commence. A transaction hash will be returned to you after validators on the network have confirmed that the transaction is legitimate (I.e you sent a correct amount not higher than your balance).
+To receive transfer LTC20 tokens, go back to the Litescribe website, click on LTC20 and select the transfer tab.  
 
-To receive LTC20 tokens you have to share your wallet address with another user. Navigate to the "Receive” tab or go to Window/receiving addresses to get your wallet address.
+![](https://paper-attachments.dropboxusercontent.com/s_6371B00262F165391CE82B55B277D081F97C9068570A657371D925EFB78FF3FC_1688477930990_Screenshot+2023-07-04+153234.png)
 
+- This time, instead of using your address as the address to receive the inscription, paste the receiver’s address. What you are doing in this case is sending an inscription to the receiver’s address therefore forfeiting ownership of the specified LTC20 token amount.
+- Click on ‘Submit & Pay invoice’ then go back to your wallet and send the specified payment amount to the address provided by the invoice. Be careful at this point and make sure to cross check all inputted information. 
 ## **Conclusion**
 
 The adoption of LTC20 tokens opens up new avenues for innovation and creativity in the Blockchain space. Whether you’re looking to incentivize users to participate in your ecosystem, or create new use cases for the Litecoin network, the LTC20 standard provides the tools, resources, and community you need to take your project one step further to its roadmap goals.
+
