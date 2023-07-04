@@ -33,19 +33,19 @@ To create LTC20 tokens, ensure you have the Electrum Litecoin wallet installed o
 
 ![](https://paper-attachments.dropboxusercontent.com/s_6371B00262F165391CE82B55B277D081F97C9068570A657371D925EFB78FF3FC_1688476962426_Screenshot+2023-07-04+152219.png)
 
-- For this guide, we will be using litescribe to create our token. Visit [**https://litescribe.io**](https://litescribe.io) and click on the ltc-20 tab.
+- For this guide, we will be using litescribe to create our token. Visit [**https://litescribe.io**](https://litescribe.io) and click on the ‘ltc-20’ tab.
 
 ![](https://paper-attachments.dropboxusercontent.com/s_6371B00262F165391CE82B55B277D081F97C9068570A657371D925EFB78FF3FC_1688465422623_Screenshot+2023-07-04+120941.png)
 
-- A popup window will open up. Click on the Deploy tab and specify the tick name of your token along with a total supply and a mint limit rate.
+- A popup window will open up. Click on the ‘Deploy’ tab and specify the tick name of your token along with a total supply and a mint limit rate.
 ![](https://paper-attachments.dropboxusercontent.com/s_6371B00262F165391CE82B55B277D081F97C9068570A657371D925EFB78FF3FC_1688466075423_Screenshot+2023-07-04+121347.png)
 
-- Click on Upload. A JSON object containing deployment details such as the protocol, operation method, tick, max supply and mint limit will be displayed. Paste your Electrum Litecoin wallet address in the field below. This will be used to receive your token’s inscription. Finally click on “Submit & Pay invoice”.
+- Click on ‘Upload’. A JSON object containing deployment details such as the protocol, operation method, tick, max supply and mint limit will be displayed. Paste your Electrum Litecoin wallet address into the field underneath to receive your token's inscription. Finally, click on ‘Submit & Pay invoice’.
 ![](https://paper-attachments.dropboxusercontent.com/s_6371B00262F165391CE82B55B277D081F97C9068570A657371D925EFB78FF3FC_1688472695178_Screenshot+2023-07-04+141032.png)
 
-- While an invoice window opens up, open your Electrum LTC wallet and send the exact amount of LTC needed for the transaction to the provided address. 
+- When the invoice page is presented to you, open your Electrum LTC wallet and send the exact amount of LTC needed for the transaction to the invoice wallet address. 
 - After the transaction is approved on the Litecoin network, copy the transaction id and visit [**https://ordinalslite.com**](https://ordinalslite.com). Paste the transaction id into the search bar to see your transaction details. 
-- You be able to should see your new token’s detail at the top with a unique inscription id. Your inscription id can also be used to view your token’s details when used in the search bar.
+- You will be to see your new token’s detail at the top with a unique inscription id. Your inscription id can also be used to view your token’s details when used in the search bar.
 ## **Minting LTC20 tokens**
 
 Now that you have a token created, you also have to mint it out to your address. Other users can mint as well as long as it doesn’t go above the token’s supply limit. The number of tokens minted per transaction is restricted to not be more than the mint limit amount. Here are the steps for minting your new LTC20 token:
