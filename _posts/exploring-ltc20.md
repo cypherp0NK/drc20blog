@@ -50,7 +50,7 @@ To create LTC20 tokens, ensure you have the Electrum Litecoin wallet installed o
 
 Now that you have a token created, you also have to mint it out to your address. Other users can mint as well as long as it doesn’t go above the token’s supply limit. The number of tokens minted per transaction is restricted to not be more than the mint limit amount. Here are the steps for minting your new LTC20 token:
 
-- Go back to the Litescribe website, click on LTC20 and stay on the Mint tab. Type in your token’s tick name and wait for a green tick to appear. 
+- Go back to the Litescribe website, click on ‘ltc-20’ and stay on the Mint tab. Type in your token’s tick name and wait for a green tick to appear. 
 - Specify an amount to mint, and how many iterations you want the mint operation to be processed. In my case I am minting just one LTC20 token once.
 
 ![](https://paper-attachments.dropboxusercontent.com/s_6371B00262F165391CE82B55B277D081F97C9068570A657371D925EFB78FF3FC_1688475309371_Screenshot+2023-07-04+145428.png)
