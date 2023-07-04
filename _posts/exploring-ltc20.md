@@ -14,7 +14,7 @@ In the ever-evolving landscape of cryptocurrencies, Litecoin emerged as a promin
 
 ## **What is LTC20?**
 
-LTC20 is a token standard being built on top of the Litecoin Ordinals Protocol with an aim of making its blockchain network compatible with fungible tokens. The LTC20 standard is experimental and may provide a promising way for its users to create tokens on the Litecoin blockchain, similar to the BRC20 token standard on Bitcoin.
+LTC20 is a token standard being built on top of the Litecoin Ordinals Protocol with an aim of making its network compatible with fungible tokens. The LTC20 standard is experimental and may provide a promising way for its users to create tokens on the Litecoin blockchain, similar to the BRC20 token standard on Bitcoin.
 
 ## **The technology behind LTC20**
 
@@ -33,7 +33,7 @@ To create LTC20 tokens, ensure you have the Electrum Litecoin wallet installed o
 
 ![](https://paper-attachments.dropboxusercontent.com/s_6371B00262F165391CE82B55B277D081F97C9068570A657371D925EFB78FF3FC_1688476962426_Screenshot+2023-07-04+152219.png)
 
-- For this guide, we will be using litescribe to create our token. Visit https://litescribe.io and click on the ltc-20 tab.
+- For this guide, we will be using litescribe to create our token. Visit [**https://litescribe.io**](https://litescribe.io) and click on the ltc-20 tab.
 
 ![](https://paper-attachments.dropboxusercontent.com/s_6371B00262F165391CE82B55B277D081F97C9068570A657371D925EFB78FF3FC_1688465422623_Screenshot+2023-07-04+120941.png)
 
@@ -44,7 +44,7 @@ To create LTC20 tokens, ensure you have the Electrum Litecoin wallet installed o
 ![](https://paper-attachments.dropboxusercontent.com/s_6371B00262F165391CE82B55B277D081F97C9068570A657371D925EFB78FF3FC_1688472695178_Screenshot+2023-07-04+141032.png)
 
 - While an invoice window opens up, open your Electrum LTC wallet and send the exact amount of LTC needed for the transaction to the provided address. 
-- After the transaction is approved on the Litecoin network, copy the transaction id and visit [https://ordinalslite.com](https://ordinalslite.com). Paste the transaction id into the search bar to see your transaction details. 
+- After the transaction is approved on the Litecoin network, copy the transaction id and visit [**https://ordinalslite.com**](https://ordinalslite.com). Paste the transaction id into the search bar to see your transaction details. 
 - You be able to should see your new token’s detail at the top with a unique inscription id. Your inscription id can also be used to view your token’s details when used in the search bar.
 ## **Minting LTC20 tokens**
 
@@ -69,7 +69,8 @@ To receive transfer LTC20 tokens, go back to the Litescribe website, click on LT
 ![](https://paper-attachments.dropboxusercontent.com/s_6371B00262F165391CE82B55B277D081F97C9068570A657371D925EFB78FF3FC_1688477930990_Screenshot+2023-07-04+153234.png)
 
 - This time, instead of using your address as the address to receive the inscription, paste the receiver’s address. What you are doing in this case is sending an inscription to the receiver’s address therefore forfeiting ownership of the specified LTC20 token amount.
-- Click on ‘Submit & Pay invoice’ then go back to your wallet and send the specified payment amount to the address provided by the invoice. Be careful at this point and make sure to cross check all inputted information. 
+- Click on ‘Submit & Pay invoice’ then go back to your wallet and send the specified payment amount to the address provided by the invoice. Be careful at this point and make sure to cross check all inputted information.
+  
 ## **Conclusion**
 
 The adoption of LTC20 tokens opens up new avenues for innovation and creativity in the Blockchain space. Whether you’re looking to incentivize users to participate in your ecosystem, or create new use cases for the Litecoin network, the LTC20 standard provides the tools, resources, and community you need to take your project one step further to its roadmap goals.
