@@ -8,7 +8,6 @@ import Layout from "../../components/layout";
 import { getPostBySlug, getAllPosts } from "../../lib/api";
 import PostTitle from "../../components/post-title";
 import Head from "next/head";
-import { CMS_NAME } from "../../lib/constants";
 import markdownToHtml from "../../lib/markdownToHtml";
 import type PostType from "../../interfaces/post";
 import MoreStories from "../../components/more-stories";
@@ -22,7 +21,7 @@ type Props = {
 
 export default function Post({ post, allPosts, preview }: Props) {
   const router = useRouter();
-  const title = `${post.title} | Blog ${CMS_NAME}`;
+  const title = `${post.title} | Web3 Blog`;
   // const morePosts = allPosts.slice(1);
   const morePosts = allPosts.slice(1);
 

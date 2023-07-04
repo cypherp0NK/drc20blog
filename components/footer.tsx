@@ -1,12 +1,19 @@
 import Container from "./container";
 import { EXAMPLE_PATH } from "../lib/constants";
+import Image from "next/image";
 
 const Footer = () => {
   return (
     <footer className="flex flex-col space-y-10 border-t px-6 py-10 lg:flex-row lg:justify-between lg:space-y-0 lg:p-16">
       <div className="space-y-2">
-        <div className="flex items-center">
-          <p className="ts-body-3 h-4 ml-auto text-gray-500 lg:ml-6"></p>
+        <div className="">
+          <Image
+            src="/assets/fav.jpeg"
+            // src="https://ipfs.io/ipfs/QmPS17FAqPkzsFKo41FugkZSuEQqMGG6p7316rvyL3NTBq"
+            alt="img"
+            width={40}
+            height={40}
+          />
         </div>
         <p className="ts-body-3 text-gray-500">
           {/* <span className="text-gray-700">100% revenue shared</span> */}©
