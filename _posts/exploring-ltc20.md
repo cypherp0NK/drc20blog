@@ -61,15 +61,15 @@ Now that you have a token created, you also have to mint it out to your address.
 ![](https://paper-attachments.dropboxusercontent.com/s_6371B00262F165391CE82B55B277D081F97C9068570A657371D925EFB78FF3FC_1688475721843_Screenshot+2023-07-04+145554.png)
 
 - Open your Electrum LTC wallet and send the exact amount of LTC needed for the transaction to the provided address. 
-- After the transaction is confirmed, ensure to freeze your tokens in the Electrum Litecoin wallet to prevent yourself from accidentally spending your tokens as low balances. Right click your transaction in the ‘Coins’ section and select ‘Freeze Coin’.
+- After the transaction is confirmed, ensure to freeze your LTC20 tokens in the Electrum Litecoin wallet to prevent yourself from accidentally spending them as low balances. Right click your transaction in the ‘Coins’ section and select ‘Freeze Coin’.
 ## **Sending and Receiving LTC20 tokens**
 
-To receive transfer LTC20 tokens, go back to the Litescribe website, click on LTC20 and select the transfer tab.  
+To transfer LTC20 tokens, go back to the Litescribe website, click on ‘ltc-20’ and then the transfer tab.  
 
 ![](https://paper-attachments.dropboxusercontent.com/s_6371B00262F165391CE82B55B277D081F97C9068570A657371D925EFB78FF3FC_1688477930990_Screenshot+2023-07-04+153234.png)
 
-- This time, instead of using your address as the address to receive the inscription, paste the receiver’s address. What you are doing in this case is sending an inscription to the receiver’s address therefore forfeiting ownership of the specified LTC20 token amount.
-- Click on ‘Submit & Pay invoice’ then go back to your wallet and send the specified payment amount to the address provided by the invoice. Be careful at this point and make sure to cross check all inputted information.
+- This time, instead of using your address to receive the inscription, paste the receiver’s address. What you are doing in this case is sending an inscription to the receiver’s address therefore forfeiting ownership of the specified LTC20 token amount.
+- Click on ‘Submit & Pay invoice’, copy the invoice address and send the payment amount from your wallet. Be careful! Make sure you cross check all inputted address informations before sending the transaction.
   
 ## **Conclusion**
 
