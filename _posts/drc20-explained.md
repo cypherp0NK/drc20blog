@@ -23,9 +23,8 @@ The groundbreaking move of DRC20 has opened doors to a multitude of benefits and
 
 1. Additional use cases for Dogecoin
 2. Simplified Token Creation
-3. Additional use cases
-4. Community Development
-5. Ecosystem Expansion
+3. Community Development
+4. Ecosystem Expansion
 
 ## **Minting DRC20 Tokens**
 
@@ -33,7 +32,7 @@ Download the [**DPal wallet extension**](https://chrome.google.com/webstore/deta
 
 ![](https://paper-attachments.dropboxusercontent.com/s_241C1B7402FEFDB7905DEF0AD1F98D632C83FE0CBCE2EACDC83CFFB3CB5815BF_1688814815392_Screenshot+2023-07-08+130707.png)
 
-Next, visit [https://drc-20.org](https://drc-20.org) to view all the existing DRC20 tokens in the Dogecoin ecosystem. Look for a DRC20 token of your choice and click on the Mint button.
+Next, visit [**https://drc-20.org**](https://drc-20.org) to view all the existing DRC20 tokens in the Dogecoin ecosystem. Look for a DRC20 token of your choice and click on the Mint button.
 
 ![](https://paper-attachments.dropboxusercontent.com/s_241C1B7402FEFDB7905DEF0AD1F98D632C83FE0CBCE2EACDC83CFFB3CB5815BF_1688817578680_Screenshot+2023-07-08+135114.png)
 
