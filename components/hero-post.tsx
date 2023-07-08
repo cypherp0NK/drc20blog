@@ -48,7 +48,7 @@ const HeroPost = ({
 
             <div className="flex flex-col lg:flex-row justify-center items-center">
               <a
-                href="/articles/exploring-ltc20"
+                href="/articles/drc20-explained"
                 className="mx-3 bg-black hover:bg-white hover:text-black border border-black text-white text-base font-semibold py-1.5 px-6 duration-200 transition-colors mb-6 lg:mb-0"
               >
                 Read more

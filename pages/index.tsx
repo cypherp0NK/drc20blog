@@ -63,7 +63,7 @@ export default function Index({ post, allPosts, preview }: Props) {
   );
 }
 export async function getStaticProps() {
-  const post = getPostBySlug("exploring-ltc20", [
+  const post = getPostBySlug("drc20-explained", [
     "title",
     "date",
     "slug",
