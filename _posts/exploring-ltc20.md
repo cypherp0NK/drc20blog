@@ -38,6 +38,7 @@ To create LTC20 tokens, ensure you have the Electrum Litecoin wallet installed o
 ![](https://paper-attachments.dropboxusercontent.com/s_6371B00262F165391CE82B55B277D081F97C9068570A657371D925EFB78FF3FC_1688465422623_Screenshot+2023-07-04+120941.png)
 
 - A popup window will open up. Click on the ‘Deploy’ tab and specify the tick name of your token along with a total supply and a mint limit rate.
+<<<<<<< HEAD
   ![](https://paper-attachments.dropboxusercontent.com/s_6371B00262F165391CE82B55B277D081F97C9068570A657371D925EFB78FF3FC_1688466075423_Screenshot+2023-07-04+121347.png)
 
 - Click on ‘Upload’. A JSON object containing deployment details such as the protocol, operation method, tick, max supply and mint limit will be displayed. Paste your Electrum Litecoin wallet address into the field underneath to receive your token's inscription. Finally, click on ‘Submit & Pay invoice’.
@@ -63,16 +64,51 @@ Now that you have a token created, you also have to mint it out to your address.
 
 - Open your Electrum LTC wallet and send the exact amount of LTC needed for the transaction to the provided address.
 - After the transaction is confirmed, ensure to freeze your LTC20 tokens in the Electrum Litecoin wallet to prevent yourself from accidentally spending them as low balances. Right click your transaction in the ‘Coins’ section and select ‘Freeze Coin’.
+=======
+![](https://paper-attachments.dropboxusercontent.com/s_6371B00262F165391CE82B55B277D081F97C9068570A657371D925EFB78FF3FC_1688466075423_Screenshot+2023-07-04+121347.png)
 
+- Click on ‘Upload’. A JSON object containing deployment details such as the protocol, operation method, tick, max supply and mint limit will be displayed. Paste your Electrum Litecoin wallet address into the field underneath to receive your token's inscription. Finally, click on ‘Submit & Pay invoice’.
+![](https://paper-attachments.dropboxusercontent.com/s_6371B00262F165391CE82B55B277D081F97C9068570A657371D925EFB78FF3FC_1688472695178_Screenshot+2023-07-04+141032.png)
+
+- When the invoice page is presented to you, open your Electrum LTC wallet and send the exact amount of LTC needed for the transaction to the invoice wallet address. 
+- After the transaction is approved on the Litecoin network, copy the transaction id and visit [**https://ordinalslite.com**](https://ordinalslite.com). Paste the transaction id into the search bar to see your transaction details. 
+- You will be to see your new token’s detail at the top with a unique inscription id. Your inscription id can also be used to view your token’s details when used in the search bar.
+## **Minting LTC20 tokens**
+
+Now that you have a token created, you also have to mint it out to your address. Other users can mint as well as long as it doesn’t go above the token’s supply limit. The number of tokens minted per transaction is restricted to not be more than the mint limit amount. Here are the steps for minting your new LTC20 token:
+
+- Go back to the Litescribe website, click on ‘ltc-20’ and stay on the Mint tab. Type in your token’s tick name and wait for a green tick to appear. 
+- Specify an amount to mint, and how many iterations you want the mint operation to be processed. In my case I am minting just one LTC20 token once.
+
+![](https://paper-attachments.dropboxusercontent.com/s_6371B00262F165391CE82B55B277D081F97C9068570A657371D925EFB78FF3FC_1688475309371_Screenshot+2023-07-04+145428.png)
+
+- Click on 'Upload’.
+- You will be presented with an invoice window to send LTC to for gas coverage. The new invoice page also has a JSON object containing the protocol, operation method, tick name, and amount to mint. Click on ‘Submit & Pay invoice’.
+
+![](https://paper-attachments.dropboxusercontent.com/s_6371B00262F165391CE82B55B277D081F97C9068570A657371D925EFB78FF3FC_1688475721843_Screenshot+2023-07-04+145554.png)
+>>>>>>> b18b507463a9ba6c2103ee2d82eda49588275df7
+
+- Open your Electrum LTC wallet and send the exact amount of LTC needed for the transaction to the provided address. 
+- After the transaction is confirmed, ensure to freeze your LTC20 tokens in the Electrum Litecoin wallet to prevent yourself from accidentally spending them as low balances. Right click your transaction in the ‘Coins’ section and select ‘Freeze Coin’.
 ## **Sending and Receiving LTC20 tokens**
 
+<<<<<<< HEAD
 To transfer LTC20 tokens, go back to the Litescribe website, click on ‘ltc-20’ and then the transfer tab.
 
 ![](https://paper-attachments.dropboxusercontent.com/s_6371B00262F165391CE82B55B277D081F97C9068570A657371D925EFB78FF3FC_1688477930990_Screenshot+2023-07-04+153234.png)
 
 - This time, instead of using your address to receive the inscription, paste the receiver’s address. What you are doing in this case is sending an inscription to the receiver’s address therefore forfeiting ownership of the specified LTC20 token amount.
 - Click on ‘Submit & Pay invoice’, copy the invoice address and send the payment amount from your wallet. Be careful! Make sure you cross check all inputted address informations before sending the transaction.
+=======
+To transfer LTC20 tokens, go back to the Litescribe website, click on ‘ltc-20’ and then the transfer tab.  
 
+![](https://paper-attachments.dropboxusercontent.com/s_6371B00262F165391CE82B55B277D081F97C9068570A657371D925EFB78FF3FC_1688477930990_Screenshot+2023-07-04+153234.png)
+>>>>>>> b18b507463a9ba6c2103ee2d82eda49588275df7
+
+- This time, instead of using your address to receive the inscription, paste the receiver’s address. What you are doing in this case is sending an inscription to the receiver’s address therefore forfeiting ownership of the specified LTC20 token amount.
+- Click on ‘Submit & Pay invoice’, copy the invoice address and send the payment amount from your wallet. Be careful! Make sure you cross check all inputted address informations before sending the transaction.
+  
 ## **Conclusion**
 
 The adoption of LTC20 tokens opens up new avenues for innovation and creativity in the Blockchain space. Whether you’re looking to incentivize users to participate in your ecosystem, or create new use cases for the Litecoin network, the LTC20 standard provides the tools, resources, and community you need to take your project one step further to its roadmap goals.
+
