@@ -29,7 +29,7 @@ export default function Index({ post, allPosts, preview }: Props) {
     <>
       <Layout>
         <Head>
-          <title>{`Web3 Articles`}</title>
+          <title>{`DRC20`}</title>
           <meta property="og:image" content={post.ogImage.url} />
         </Head>
         <Container>
