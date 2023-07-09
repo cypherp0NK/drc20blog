@@ -16,7 +16,7 @@ const Meta = () => {
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta
         name="description"
-        content="The latest web3 articles at your fingertips"
+        content="DRC20 tutorial, DRC20 guide, and reference to use Dogecoin's new DRC20 tokens. An article that talks about Dogecoin's move from meme to mainstream"
       />
       <meta property="og:image" content="/assets/fav.jpeg" />
     </Head>
