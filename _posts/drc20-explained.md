@@ -1,72 +1,79 @@
 ---
-title: "From Meme to Mainstream: Dogecoin’s DRC20 Token Standard Explained"
-excerpt: "Dogecoin is a cryptocurrency originally inspired by a popular internet meme featuring a Shiba Inu dog. The cryptocurrency was..."
-coverImage: "/assets/blog/drcfolder/drcImg.jpg"
-date: "2023-07-04T05:35:07.322Z"
+title: "Mordinals: Unveiling Monero’s Hidden Power for NFTs and Beyond"
+excerpt: "With Mordinals, NFTs have found their way to Monero’s blockchain. Just like with Bitcoin ordinals, mordinals allow users to inscribe..."
+coverImage: "/assets/blog/mordinals/mordinals.jpg"
+date: "2023-11-23T05:35:07.322Z"
 author:
   name: Cypherp0NK
   picture: "/assets/blog/authors/jj.jpeg"
 ogImage:
-  url: "/assets/blog/dynamic-routing/drcImg.jpg"
+  url: "/assets/blog/mordinals/mordinals.jpg"
 ---
 
-Dogecoin is a cryptocurrency originally inspired by a popular internet meme featuring a Shiba Inu dog. The cryptocurrency was created in 2013 by software developers Billy Markus and Jackson Palmer, and quickly gained a following among enthusiasts due to its hilarious nature. The cryptocurrency has been taken more seriously over the years and has amassed a market capitalization of over 9 billion USD at the time of writing this article. The cryptocurrency has never been known to support custom tokens on its network, however, with the introduction of BRC20 on Bitcoin, and LTC20 on Litecoin, Dogecoin has followed suit with its own token standard support for a new DRC20 token.
-In this article, we’ll explore the nature of DRC20 tokens and guide you on how to mint and deploy one.
+With Mordinals, NFTs have found their way to Monero’s blockchain. Just like with Bitcoin ordinals, mordinals allow users to inscribe additional information with a transaction. Since the creation of Monero in 2014, a field or option called “tx_extra” has always been a part of all transactions. This feature primarily served as a means to include extra data within Monero transactions, but it remained relatively underutilized until the advent of mordinals. Mordinals, short for Monero ordinals, have breathed new life into the world of Monero transactions, introducing exciting possibilities for embedding metadata and expanding the utility of Monero's blockchain.
 
-## **What is DRC20?**
+## **NFTs on Monero**
 
-DRC20 is a new standard on the Dogecoin blockchain used to create custom and fungible tokens via inscription into units of elons. Elons are small units of Dogecoin’s native currency “DOGE”. They are similar to wei on Ethereum and satoshis on Bitcoin. The DRC20 standard paves the way for its community to become more innovative by creating tokens that can be used in voting systems, blockchain DApps and more.
+The integration of Non-Fungible Tokens (NFTs) into the Monero blockchain represents a significant leap forward in the world of digital assets. NFTs, which have gained immense popularity in the blockchain space, are unique digital tokens that represent ownership of distinct, indivisible items such as digital art, collectibles, music, and more. Unlike traditional cryptocurrencies like Bitcoin, NFTs are not interchangeable with one another, making them the ideal choice for representing ownership and authenticity of digital and physical assets.
 
-## **Benefits and Features of DRC20 for Dogecoin**
+## **Anonymous Consensus**
 
-The groundbreaking move of DRC20 has opened doors to a multitude of benefits and features that propel Dogecoin’s journey to new feats by giving its blockchain:
+One of the most promising and transformative use cases of Mordinals is the possibility of anonymous consensus within the Monero blockchain, creating secure and private voting systems. Secure voting systems are crucial for ensuring fair and tamper-proof elections in corporate and community governance. 
+Monero's privacy features, including ring signatures, confidential transactions, and stealth addresses, create an environment where individual votes can be cast anonymously. When coupled with Mordinals, the transaction metadata can be used to embed voting choices securely within Monero transactions.
 
-1. Additional use cases for Dogecoin
-2. Simplified Token Creation
-3. Community Development
-4. Ecosystem Expansion
+## **Setting up a Mordinal Inscription: A Step-by-Step Guide**
 
-## **Minting DRC20 Tokens**
+To set up a Mordinal inscription, you will need to build the Monero wallet CLI and sync to the daemon blockchain. To get the wallet CLI visit https://www.getmonero.org/downloads/#cli and download the software according to your computer’s operating system. Once downloaded and installed, move the downloaded file into your desktop folder for easier visibility.
+Download the daemon blockchain from: https://www.getmonero.org/downloads/#blockchain and ensure it is connected to port 18080 on localhost.
+Open your computer’s terminal and cd (change directory) into the downloaded software’s folder:
 
-Download the [**DPal wallet extension**](https://chrome.google.com/webstore/detail/dpalwallet-for-dogecoin/lmkncnlpeipongihbffpljgehamdebgi) for Doge and DRC20 tokens into your PC.
+![](https://paper-attachments.dropboxusercontent.com/s_121B5EDB90232DC75DF5694513EE8067E57F51AE0A5F5BFCB3D5BC39A1491FC8_1700731996640_Screenshot+2023-11-23+at+10.32.59.png)
 
-![](https://paper-attachments.dropboxusercontent.com/s_241C1B7402FEFDB7905DEF0AD1F98D632C83FE0CBCE2EACDC83CFFB3CB5815BF_1688814815392_Screenshot+2023-07-08+130707.png)
 
-Next, visit [**https://drc-20.org**](https://drc-20.org) to view all the existing DRC20 tokens in the Dogecoin ecosystem. Look for a DRC20 token of your choice and click on the Mint button.
+Once in the directory, run the following command to generate a new wallet:
 
-![](https://paper-attachments.dropboxusercontent.com/s_241C1B7402FEFDB7905DEF0AD1F98D632C83FE0CBCE2EACDC83CFFB3CB5815BF_1688817578680_Screenshot+2023-07-08+135114.png)
 
-Paste your DPAL wallet address and click on ‘Confirm input’. Next, input an amount of the selected DRC20 token to mint. An amount in Doge will be returned automatically in the second field. You are to have at least this amount or more in your DPAL wallet. Click all the checkboxes, agree to the terms of use, and click on confirm. A payment window containing a Doge wallet address will be provided to you. Pay the Doge amount to that address and come back to the window. After the transaction is confirmed, the DRC20 token you minted will go into your wallet. You can also use a credit card backed by [**Moonpay**](https://moonpay.com) to mint DRC20 tokens on drc-20.org.
-To view your token balance, click on the ‘Balances’ tab and paste your wallet address into the input field and click on ‘Load Balance’. You can also view your balance in your DPAL wallet by navigating to the “Doginals” section of the wallet. It may take some time for your DRC20 token assets to appear in your wallet directly as the wallet is still in the early stages of development.
+    ./monero-wallet-cli --generate-new-wallet=home/wallets/my_mordinals.xmr
 
-## **Deploying new DRC20 Tokens**
+You will be asked to provide a password for the wallet. Input a password, click `Enter` or `Return` on Mac. 
 
-The DPAL wallet provides a convenient way for deploying new tokens into the Dogecoin ecosystem. Open your wallet, click on the robot avatar on the top right corner, and click on Doginals:
 
-![](https://paper-attachments.dropboxusercontent.com/s_241C1B7402FEFDB7905DEF0AD1F98D632C83FE0CBCE2EACDC83CFFB3CB5815BF_1688823430367_Screenshot+2023-07-08+153522.png)
+![](https://paper-attachments.dropboxusercontent.com/s_121B5EDB90232DC75DF5694513EE8067E57F51AE0A5F5BFCB3D5BC39A1491FC8_1700731576216_Screenshot+2023-11-23+at+09.37.24.png)
 
-Next click on ‘Mint Doginals’.
 
-![](https://paper-attachments.dropboxusercontent.com/s_241C1B7402FEFDB7905DEF0AD1F98D632C83FE0CBCE2EACDC83CFFB3CB5815BF_1688823499877_Screenshot+2023-07-08+153619.png)
+Confirm the password and tell the CLI what language format you would like your seed phrases to be in:
 
-Click on ‘DRC20’ Stay on the ‘deploy’ tab. Give your token a tick name, supply and mint rate limit:
+![](https://paper-attachments.dropboxusercontent.com/s_121B5EDB90232DC75DF5694513EE8067E57F51AE0A5F5BFCB3D5BC39A1491FC8_1700732472811_Screenshot+2023-11-23+at+09.37.59.png)
 
-![](https://paper-attachments.dropboxusercontent.com/s_241C1B7402FEFDB7905DEF0AD1F98D632C83FE0CBCE2EACDC83CFFB3CB5815BF_1688824930793_Screenshot+2023-07-08+160130.png)
 
-Now, click on ‘Inscribe’ and your transaction will be broadcasted to the Dogecoin network. Once your transaction is confirmed, go to the mint tab, input your tick and mint yourself some of your new DRC20 tokens!
+Once specified your new wallet address, private key, and seed phrase will be generated: 
 
-## **Transferring DRC20 Tokens**
 
-On the same ‘Doginals’ page in your wallet, click on ‘Mint Doginals’, DRC20, and then transfer:
+![](https://paper-attachments.dropboxusercontent.com/s_121B5EDB90232DC75DF5694513EE8067E57F51AE0A5F5BFCB3D5BC39A1491FC8_1700733018937_image.png)
 
-![](https://paper-attachments.dropboxusercontent.com/s_241C1B7402FEFDB7905DEF0AD1F98D632C83FE0CBCE2EACDC83CFFB3CB5815BF_1688828334230_Screenshot+2023-07-08+165828.png)
 
-Click on ‘Inscribe’ and wait for the transaction to be broadcasted. Next, go to ‘DRC20 Transferable’ in Doginals:
+Store your key and seed phrases in a safe place before proceeding. Ensure you share it with no one. 
+You will be asked to sync your wallet to daemon. Type Y / Yes into the terminal to continue.
 
-![](https://paper-attachments.dropboxusercontent.com/s_241C1B7402FEFDB7905DEF0AD1F98D632C83FE0CBCE2EACDC83CFFB3CB5815BF_1688828532454_Screenshot+2023-07-08+170139.png)
 
-You will see your inscription transaction. Click on ‘Transfer’ and then ‘Transfer 1 chek’. Paste the address to receive the DRC20 token and click on ‘Next’ and then ‘Send Transfer’. After inputting your wallet password, the address you pasted will receive the amount of DRC20 tokens in the inscription.
+![](https://paper-attachments.dropboxusercontent.com/s_121B5EDB90232DC75DF5694513EE8067E57F51AE0A5F5BFCB3D5BC39A1491FC8_1700734995042_Screenshot+2023-11-23+at+11.22.43.png)
 
-## **Conclusion**
 
-From its humble origins as a meme-inspired cryptocurrency, Dogecoin has defied expectations and emerged as a significant player in the crypto space. By embracing the DRC20 token standard, Dogecoin has undergone a transformative evolution, paving the way for its mainstream adoption and expanding its horizons beyond mere meme status. The DRC20 standard is experimental and still in the early stages of development. Users should have this in mind when interacting with the new token standard to ensure safe spending between other users.
+After your wallet is successfully synced to daemon, you will be logged into your new wallet’s CLI. 
+
+Prepare your NFT image in ‘.png’ format and create a ‘.txt’ file containing your image description. It is best to store both objects in the same directory. With the `mint_inscription` command you can mint your first NFT into the Monero ecosystem: 
+
+
+    mint_inscription /home/images/nftImage.png /home/description.txt
+## **Transfer NFT  inscription**
+
+To transfer NFTs or other forms of Mordinal inscriptions across the Monero ecosystem, use the `transfer_inscription` along with the inscription’s hash and receiver’s address:
+
+
+    transfer_inscription <inscription_hash> <receiver>
+
+
+## **Conclusion: Mordinals and the Future of Monero**
+
+The advent of Mordinals on the Monero blockchain is not just a technological advancement but a paradigm shift in the way we perceive and interact with digital assets. By blending the inherent privacy and security features of Monero with the uniqueness and versatility of NFTs, Mordinals offer a new frontier in blockchain technology. This innovation extends beyond mere digital art and collectibles, opening doors to a wide array of applications including decentralized identity verification, private tokenization, and secure document handling.
+
